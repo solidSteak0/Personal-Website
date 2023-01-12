@@ -78,12 +78,6 @@ body {
   max-width: 100;
 }
 
-.hero {
-  /* background-image: url(background4.jpg); */
-  background-repeat: no-repeat;
-  background-size: contain;
-
-}
 
 .skills {
   padding-top: 30px;
