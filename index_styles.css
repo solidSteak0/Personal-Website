@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "Tomatoes";
+  src: url(/VSCODE/Portfolio1/Tomatoes-O8L8.ttf);
+}
+@font-face {
+  font-family: "Julia";
+  src: url(/VSCODE/Portfolio1/Julia_Handwritten_2.ttf);
+}
+@font-face {
+  font-family: "michelle";
+  src: url(/VSCODE/Portfolio1/michelle\ digital\ handwritten.ttf);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+
+body {
+  background-color: rgb(247, 245, 245);
+  background-image: url(HOME1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  min-width: 950px;
+}
+.p-intro{
+  font-family: 'Franklin Gothic Medium';
+}
+
+.navbar ul.navmenue li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul.navmenue li a {
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+  text-transform: uppercase;
+}
+
+.navbar ul.navmenue li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: black;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul.navmenue li:hover::after {
+  width: 100%;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.intro {
+  font-family: 'Franklin Gothic Medium';
+  align-items: center;
+  width: 750px;
+  max-width: 750px;
+  height: 14rem;
+  background-color: rgb(236, 231, 231, 0.3);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+
+
+.heading {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Franklin Gothic Medium, sans-serif;
+  font-size: 2.5rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 100;
+}
+
+.hero {
+  /* background-image: url(background4.jpg); */
+  /* background-repeat: no-repeat;
+  background-size: contain; */
+  display: block;
+}
+
+.skills {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: rgba(224, 222, 211, 255);
+  border-radius: 1rem;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  /* background-image: url(background3.jpg); */
+
+}
+
+/* ul.prog-skills, ul.other-skills {
+  list-style-type: square;
+  list-style-position: outside;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+} */
+
+ul {
+  list-style-type: square;
+  list-style-position: outside;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+.work {
+  background-image: url(background5.jpg);
+  background-repeat: no-repeat;
+  background-color: rgba(224, 222, 211, 255);
+  border-radius: 2rem;
+  border-color: rgba(224, 222, 211, 255, 2);
+  height: 450px;
+  width: 1200px;
+  /* margin-left: 20rem;
+  margin-right: 100rem; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects-head {
+  padding-top: 7rem;
+  padding-left: 19rem;
+  font-size: 45px;
+  font-weight: 900;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.projects {
+  padding-left: 35rem;
+  font-family: Tomatoes;
+}
+
+/* .proj-link{
+
+} */
+.intro {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    /* padding: 40px; */
+    /* max-width: 100; */
+}
+.contact-head{
+  text-align: center;
+  padding-bottom: 1rem;
+  font-family: julia;
+  font-size: 2rem;
+}
+.form-user, input[type = "text"]{
+    display: block;
+    margin: auto;
+    min-width: 45%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    /* background-color: #FFF; */
+    border-radius: 0.5rem;
+    box-shadow: var(black);
+    margin-bottom: 1.5rem;
+}
+input[id="message"]{
+  display: block;
+  width: 45%;
+  height: 200px;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  background-color: beige;
+  border-radius: 0.5rem;
+  box-shadow: var(--grey);
+  margin-bottom: 1.5rem;
+
+  }
+/* .form-message, input[id="message"]{
+  display: block;
+    margin: auto;
+    height: 20px;
+    min-width: 45%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    box-shadow: var(black);
+    margin-bottom: 1.5rem;
+    text-align: left;
+} */
+
+
+input[type="submit"]{
+    margin: auto;
+    display: block;
+    width: 10rem;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    color: rgb(0, 0, 0);
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    box-shadow: black;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.70;
+}
